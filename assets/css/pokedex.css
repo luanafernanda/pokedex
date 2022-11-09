@@ -1,9 +1,17 @@
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .normal {
   background-color: #a6a877;
 }
 
 .grass {
-  background-color: #771850;
+  background-color: #77c850;
 }
 
 .fire {
@@ -20,6 +28,10 @@
 
 .ice {
   background-color: #98d5d7;
+}
+
+.ground {
+  background-color: #dfbf69;
 }
 
 .flying {
@@ -56,27 +68,12 @@
   background-color: #f9aec7;
 }
 
-.pokemons {
-  display: grid;
-  grid-template-columns: 1fr;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .pokemon {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
-  color: #fff;
-}
-
-.pokemon .name {
-  color: #fff;
-  text-transform: capitalize;
-  margin-bottom: 0.25rem;
 }
 
 .pokemon .number {
@@ -84,6 +81,11 @@
   opacity: 0.3;
   text-align: right;
   font-size: 0.625rem;
+}
+.pokemon .name {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 0.25rem;
 }
 
 .pokemon .detail {
